@@ -1,5 +1,5 @@
 export const homeObjOne = {
-    id: 'about',
+    id: 'discover',
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
@@ -16,7 +16,7 @@ export const homeObjOne = {
 };
 
 export const homeObjTwo = {
-    id: 'nextOne',
+    id: 'services',
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
@@ -32,10 +32,10 @@ export const homeObjTwo = {
     darkText: true
 };
 export const homeObjThree = {
-    id: 'nextTwo',
-    lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
+    id: 'signup',
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
     topLine: 'Premium Bank',
     headLine: 'Unlimited Trans',
     description: 'Desc homeOne',
@@ -43,7 +43,7 @@ export const homeObjThree = {
     imgStart: false,
     img: require('../../images/svg-1.svg'),
     alt: 'car',
-    dark: true,
-    primary: true,
-    darkText: false
+    dark: false,
+    primary: false,
+    darkText: true
 };
