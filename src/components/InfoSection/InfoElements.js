@@ -12,12 +12,11 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
     display:grid;
     z-index: 1;
-    height: 860px;
-    width: 100%;
-    max-width: 1100px;
+    height: 65vh;
+    width: 80%;
     margin-right: auto;
     margin-left: auto;
-    padding: 0 24px;
+    padding: 0 2.5vh;
     justify-content: center;
 `;
 
@@ -45,24 +44,24 @@ export const Column2 = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-    max-width: 540px;
+    max-width: 35%;
     padding-top: 0;
     padding-bottom: 60px;
 `;
 
 export const TopLine = styled.p`
     color: #01bf71;
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 1.5vh;
+    line-height: 1.55vh;
     font-weight: 700;
     letter-spacing: 1.4px;
     text-transform: uppercase;
-    margin-bottom: 16px;
+    margin-bottom: 1.55vh;
 `;
 
 export const Heading = styled.h1`
-    margin-bottom: 24px;
-    font-size: 48px;
+    margin-bottom: 2.5vh;
+    font-size: 5vh;
     line-height: 1.1;
     font-weight: 600;
     color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')};
@@ -73,10 +72,10 @@ export const Heading = styled.h1`
 `;
 
 export const Subtitle = styled.p`
-    max-width: 440px;
-    margin-bottom:35px;
-    font-size: 18px;
-    line-height: 24px;
+    max-width: 100%;
+    margin-bottom: 3vh;
+    font-size: 1.6vh;
+    line-height: 2.5vh;
     color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
 `;
 
@@ -86,7 +85,7 @@ export const BtnWrap = styled.div`
 `;
 
 export const ImgWrap = styled.div`
-    max-width: 555px;
+    max-width: 100%;
     height: 100%;
 `;
 

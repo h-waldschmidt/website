@@ -7,7 +7,7 @@ export const HeroContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    height: 800px;
+    height: 85vh;
     position: relative;
     z-index: 1;
     :before{
@@ -20,6 +20,9 @@ export const HeroContainer = styled.div`
         background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 100%), 
         linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%);
         z-index: 2;
+    }
+    @media screen and (max-width:768px){
+        height: 65vh;
     }
 `;
 
@@ -44,7 +47,7 @@ export const VideoBg = styled.video`
 
 export const HeroContent = styled.div`
     z-index: 3;
-    max-width: 1200px;
+    max-width: 80%;
     position: absolute;
     padding: 8px 24px;
     display: flex;
@@ -54,7 +57,7 @@ export const HeroContent = styled.div`
 
 export const HeroH1 = styled.h1`
     color: #fff;
-    font-size: 48px;
+    font-size: 5vh;
     text-align: center;
 
     @media screen and (max-width: 768px){
@@ -68,9 +71,9 @@ export const HeroH1 = styled.h1`
 `;
 
 export const HeroP = styled.p`
-    margin-top: 24px;
+    margin-top: 2.5vh;
     color: #fff;
-    font-size: 24px;
+    font-size: 2.5vh;
     text-align: center;
     max-width: 600px;
 
@@ -85,7 +88,7 @@ export const HeroP = styled.p`
 `;
 
 export const HeroBtnWrapper = styled.div`
-    margin-top: 32px;
+    margin-top: 3.5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,10 +96,10 @@ export const HeroBtnWrapper = styled.div`
 
 export const ArrowForward = styled(MdArrowForward)`
     margin-left: 8px;
-    font-size: 20px;
+    font-size: 2.25vh;
 `;
 
 export const ArrowRight = styled(MdKeyboardArrowRight)`
     margin-left: 8px;
-    font-size: 20px;
+    font-size: 2.25vh;
 `;

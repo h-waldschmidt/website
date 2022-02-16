@@ -6,7 +6,7 @@ export const FooterContainer = styled.footer`
 `;
 
 export const FooterWrap = styled.div`
-    padding: 48px 24px;
+    padding: 5vh 2.5vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,7 +36,7 @@ export const FooterLinkItems = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 16px;
+    margin: 0.5vh;
     text-align: left;
     width: 160px;
     box-sizing: border-box;
@@ -50,15 +50,15 @@ export const FooterLinkItems = styled.div`
 `;
 
 export const FooterLinkTitle = styled.h1`
-    font-size: 14px;
-    margin-bottom: 16px;
+    font-size: 1.25vh;
+    margin-bottom: 1.5vh;
 `;
 
 export const FooterLink = styled(Link)`
     color: #fff;
     text-decoration: none;
     margin-bottom: 0.5rem;
-    font-size: 14px;
+    font-size: 1.1vh;
 
     &:hover{
         color: #01bf71;

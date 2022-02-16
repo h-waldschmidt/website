@@ -2,11 +2,11 @@ import styled from 'styled-components';
 import { Link as LinkR } from 'react-router-dom';
 import { Link as LinkS } from 'react-scroll'
 export const Nav = styled.nav`
-    background: ${({ scrollNav }) => (scrollNav ? '#000' : 'transparent')};
-    height: 80px;
+    background: ${({ scrollNav }) => (scrollNav ? '#000' : '#000')};
+    height: 8vh;
     display: flex;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 1.25vh;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -19,20 +19,20 @@ export const Nav = styled.nav`
 export const NavbarContainer = styled.div`
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    height: 8vh;
     z-index: 1;
     width: 80%;
-    padding:0 24px;
+    padding:0 1.25vh;
 `;
 
 export const NavLogo = styled(LinkR)`
     color: #fff;
     justify-self: flex-start;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 2.25vh;
     display: flex;
     align-items: center;
-    margin-left: 24px;
+    margin-left: 2.5vh;
     font-weight: bold;
     text-decoration: none;
 `;
@@ -57,7 +57,7 @@ export const NavMenu = styled.ul`
     align-items: center;
     list-style: none;
     text-align: center;
-    margin-right: -22px;
+    margin-right: -2.45vh;
 
     @media screen and (max-width: 768px) {
         display: none;
@@ -65,7 +65,7 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-    height: 80px;
+    height: 8vh;
 `;
 
 export const NavLinks = styled(LinkS)`
@@ -92,10 +92,10 @@ export const NavBtn = styled.nav`
 `;
 
 export const NavBtnLink = styled(LinkR)`
-    border-radius: 50px;
+    border-radius: 5.2vh;
     background: #01bf71;
     white-space: nowrap;
-    padding: 10px 22px;
+    padding: 1vh 2.4vh;
     color: #010606;
     font-size: none;
     outline: none;
