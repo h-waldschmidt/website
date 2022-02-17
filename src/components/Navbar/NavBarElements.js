@@ -35,6 +35,9 @@ export const NavLogo = styled(LinkR)`
     margin-left: 2.5vh;
     font-weight: bold;
     text-decoration: none;
+    @media (max-width: 834px) {
+        padding-top: 1vh;
+    }
 `;
 
 export const MobileIcon = styled.div`
@@ -78,7 +81,7 @@ export const NavLinks = styled(LinkS)`
     cursor: pointer;
 
     &.active{
-        border-bottom: 3px solid #01bf71;
+        border-bottom: 0.2vh solid #01bf71;
     }
 `;
 

@@ -113,5 +113,5 @@ export const SocialIcons = styled.div`
 export const SocialIconLink = styled.a`
     padding: 1vh;
     color: #fff;
-    font-size: 24px;
+    font-size: 2.5vh;
 `;
