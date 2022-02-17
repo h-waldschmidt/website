@@ -15,10 +15,42 @@ const Sidebar = ({ isOpen, toggle }) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to='home' onClick={toggle}>Home</SidebarLink>
-                    <SidebarLink to='Projects' onClick={toggle}>Projects</SidebarLink>
-                    <SidebarLink to='About' onClick={toggle}>About</SidebarLink>
-                    <SidebarLink to='Contact' onClick={toggle}>Contact</SidebarLink>
+                    <SidebarLink to='home'
+                        onClick={toggle}
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact='true'
+                        offset={-60}>
+                            Home
+                    </SidebarLink>
+                    <SidebarLink to='Projects' 
+                        onClick={toggle}
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact='true'
+                        offset={-60}>
+                        Projects
+                    </SidebarLink>
+                    <SidebarLink to='About' 
+                        onClick={toggle}
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact='true'
+                        offset={-60}>
+                            About
+                    </SidebarLink>
+                    <SidebarLink to='Contact'
+                        onClick={toggle}
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact='true'
+                        offset={-60}>
+                            Contact
+                    </SidebarLink>
                 </SidebarMenu>
             </SidebarWrapper>
         </SidebarContainer>
