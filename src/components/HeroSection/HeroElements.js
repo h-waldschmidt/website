@@ -103,3 +103,15 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
     margin-left: 8px;
     font-size: 2.25vh;
 `;
+
+export const SocialIcons = styled.div`
+    display: center;
+    align-items: center;
+    width: 240px;
+`;
+
+export const SocialIconLink = styled.a`
+    padding: 1vh;
+    color: #fff;
+    font-size: 24px;
+`;

@@ -47,27 +47,22 @@ const Navbar = ({ toggle }) => {
                         </MobileIcon>
                         <NavMenu>
                             <NavItem>
-                                <NavLinks to='discover'
+                                <NavLinks to='/' onClick={toggleHome}>
+                                    Home
+                                </NavLinks>
+                            </NavItem>
+                            <NavItem>
+                                <NavLinks to='Projects'
                                     smooth={true}
                                     duration={500}
                                     spy={true}
                                     exact='true'
                                     offset={-80}>
-                                    Discover
+                                    Projects
                                 </NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to='services'
-                                    smooth={true}
-                                    duration={500}
-                                    spy={true}
-                                    exact='true'
-                                    offset={-80}>
-                                    Services
-                                </NavLinks>
-                            </NavItem>
-                            <NavItem>
-                                <NavLinks to='about'
+                                <NavLinks to='About'
                                     smooth={true}
                                     duration={500}
                                     spy={true}
@@ -77,13 +72,13 @@ const Navbar = ({ toggle }) => {
                                 </NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to='signup'
+                                <NavLinks to='Contact'
                                     smooth={true}
                                     duration={500}
                                     spy={true}
                                     exact='true'
                                     offset={-80}>
-                                    Sign up
+                                    Contact
                                 </NavLinks>
                             </NavItem>
                         </NavMenu>

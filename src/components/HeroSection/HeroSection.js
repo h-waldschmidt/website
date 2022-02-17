@@ -9,8 +9,11 @@ import {
     HeroP,
     HeroBtnWrapper,
     ArrowForward,
-    ArrowRight
+    ArrowRight,
+    SocialIcons,
+    SocialIconLink
 } from './HeroElements';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 const HeroSection = () => {
     const [hover, setHover] = useState(false);
 
@@ -19,18 +22,27 @@ const HeroSection = () => {
     }
 
     return (
-        <HeroContainer>
+        <HeroContainer id='home'>
             <HeroBg>
                 // TODO: change this part
                 <VideoBg autoPlay loop muted type='video/mp4' />
             </HeroBg>
             <HeroContent>
-                <HeroH1>Virtual Banking</HeroH1>
-                <HeroP>Sign up for</HeroP>
+                <HeroH1>Hi I am Helmut!</HeroH1>
+                <HeroP>
+                    <SocialIcons>
+                        <SocialIconLink href='//www.github.com' target='_blank' aria-label='Linkedin'>
+                            <FaGithub />
+                        </SocialIconLink>
+                        <SocialIconLink href='//www.linkedin.com' target='_blank' aria-label='Linkedin'>
+                            <FaLinkedin />
+                        </SocialIconLink>
+                    </SocialIcons>
+                </HeroP>
                 <HeroBtnWrapper>
-                    <Button to='signup' onMouseEnter={onHover} onMouseLeave={onHover}
+                    <Button href='//www.github.com' target='_blank' onMouseEnter={onHover} onMouseLeave={onHover}
                         primary='true' dark='true'>
-                        Get started {hover ? <ArrowForward /> : <ArrowRight />}
+                        My Resume{hover ? <ArrowForward /> : <ArrowRight />}
                     </Button>
 
                 </HeroBtnWrapper>
