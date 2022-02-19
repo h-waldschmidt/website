@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { MdKeyboardArrowRight, MdArrowForward } from 'react-icons/md'
 
 export const HeroContainer = styled.div`
+    margin-top:-8vh;
     background: #0c0c0c;
     display: flex;
     justify-content: center;
@@ -37,12 +38,10 @@ export const HeroBg = styled.div`
     overflow: hidden;
 `;
 
-export const VideoBg = styled.video`
+export const ImgBg = styled.img`
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
     object-fit: cover;
-    background-image: #232a34;
 `;
 
 export const HeroContent = styled.div`
@@ -114,4 +113,9 @@ export const SocialIconLink = styled.a`
     padding: 1vh;
     color: #fff;
     font-size: 2.5vh;
+    svg:hover{
+        transform: scale(1.2);
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+    }
 `;
