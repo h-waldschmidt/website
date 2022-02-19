@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { Button } from '../ButtonElement';
+import Video from '../../images/trees.jpg';
 import {
     HeroContainer,
     HeroBg,
-    VideoBg,
+    ImgBg,
     HeroContent,
     HeroH1,
     HeroP,
@@ -24,8 +25,7 @@ const HeroSection = () => {
     return (
         <HeroContainer id='home'>
             <HeroBg>
-                // TODO: change this part
-                <VideoBg autoPlay loop muted type='video/mp4' />
+                <ImgBg type='image/jpg' src={Video} alt='bg-img'/>
             </HeroBg>
             <HeroContent>
                 <HeroH1>Hi I am Helmut!</HeroH1>
