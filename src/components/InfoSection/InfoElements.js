@@ -2,10 +2,10 @@ import styled from 'styled-components';
 
 export const InfoContainer = styled.div`
     color: #fff;
-    background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#010606')};
+    background: ${({ lightBg }) => (lightBg ? '#6dc64b' : '#010606')};
 
     @media screen and (max-width: 768px){
-        padding:100px 0;
+        padding:75px 0;
     }
 `;
 
@@ -85,12 +85,16 @@ export const BtnWrap = styled.div`
 `;
 
 export const ImgWrap = styled.div`
-    max-width: 100%;
+    max-width: 20vw;
     height: 100%;
+    @media screen and (max-width:834px){
+        max-width: 100%;
+    }
 `;
 
 export const Img = styled.img`
     width: 100%;
+    height: 100%;
     margin: 0 0 10px 0;
     padding-right: 0;
 `
