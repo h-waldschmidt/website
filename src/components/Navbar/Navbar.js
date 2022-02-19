@@ -51,7 +51,7 @@ const Navbar = ({ toggle }) => {
                                     onClick={toggleHome}
                                     spy={true}
                                     exact='true'
-                                    offset={-175}>
+                                    offset={0}>
                                     Home
                                 </NavLinks>
                             </NavItem>
@@ -61,7 +61,7 @@ const Navbar = ({ toggle }) => {
                                     duration={500}
                                     spy={true}
                                     exact='true'
-                                    offset={-160}>
+                                    offset={0}>
                                     Projects
                                 </NavLinks>
                             </NavItem>
@@ -71,7 +71,7 @@ const Navbar = ({ toggle }) => {
                                     duration={500}
                                     spy={true}
                                     exact='true'
-                                    offset={-160}>
+                                    offset={0}>
                                     About
                                 </NavLinks>
                             </NavItem>
@@ -81,14 +81,11 @@ const Navbar = ({ toggle }) => {
                                     duration={500}
                                     spy={true}
                                     exact='true'
-                                    offset={-275}>
+                                    offset={0}>
                                     Contact
                                 </NavLinks>
                             </NavItem>
                         </NavMenu>
-                        <NavBtn>
-                            <NavBtnLink to='/signin'>Sign In</NavBtnLink>
-                        </NavBtn>
                     </NavbarContainer>
                 </Nav>
             </IconContext.Provider>

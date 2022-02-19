@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link as LinkR } from 'react-router-dom';
 import { Link as LinkS } from 'react-scroll'
 export const Nav = styled.nav`
-    background: ${({ scrollNav }) => (scrollNav ? '#000' : '#000')};
+    background: transparent;
     height: 8vh;
     display: flex;
     justify-content: center;
@@ -14,6 +14,10 @@ export const Nav = styled.nav`
     @media screen and (max-width: 960px) {
         transition: 0.7s all ease;
     }
+    @media screen and (max-width: 834px){
+        background: ${({ scrollNav }) => (scrollNav ? '#000' : 'transparent')};
+    }
+
 `;
 
 export const NavbarContainer = styled.div`
@@ -23,6 +27,9 @@ export const NavbarContainer = styled.div`
     z-index: 1;
     width: 80%;
     padding:0 1.25vh;
+    @media screen and (max-width: 834px) {
+        width: 100%;
+    }
 `;
 
 export const NavLogo = styled(LinkR)`
@@ -36,7 +43,12 @@ export const NavLogo = styled(LinkR)`
     font-weight: bold;
     text-decoration: none;
     @media (max-width: 834px) {
-        padding-top: 1vh;
+        padding-top: 0.5vh;
+    }
+    &:hover{
+        transform: scale(1.2);
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
     }
 `;
 
@@ -44,14 +56,14 @@ export const MobileIcon = styled.div`
     display: none;
 
     @media (max-width: 834px) {
-        display: block;;
+        color:#fff;
+        display: block;
         position: absolute;
         top: 0;
         right: 0;
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
-        color:#fff;
     }
 `;
 
@@ -69,6 +81,11 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
     height: 8vh;
+    &:hover{
+        transform: scale(1.2);
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+    }
 `;
 
 export const NavLinks = styled(LinkS)`
@@ -81,7 +98,7 @@ export const NavLinks = styled(LinkS)`
     cursor: pointer;
 
     &.active{
-        border-bottom: 0.2vh solid #01bf71;
+        border-bottom: 0.2vh solid #fff;
     }
 `;
 
