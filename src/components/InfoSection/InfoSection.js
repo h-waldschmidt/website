@@ -1,5 +1,6 @@
-import React from 'react'
-import { Button } from '../ButtonElement';
+import React, { useState } from 'react'
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
+
 import {
     InfoContainer,
     InfoWrapper,
@@ -12,9 +13,14 @@ import {
     Subtitle,
     BtnWrap,
     ImgWrap,
-    Img
+    Img,
+    ArrowForward,
+    ArrowRight,
+    HeroP,
+    SocialIcons,
+    SocialIconLink,
+    Button
 } from './InfoElements';
-
 
 function InfoSection({ lightBg,
     id,
@@ -30,7 +36,18 @@ function InfoSection({ lightBg,
     primary,
     dark,
     dark2
-}) {
+}) 
+{
+    const [hover1, setHover1] = useState(false);
+
+    const onHover1 = () => {
+        setHover1(!hover1);
+    }
+    const [hover2, setHover2] = useState(false);
+
+    const onHover2 = () => {
+        setHover2(!hover2);
+    }
     return (
         <>
             <InfoContainer lightBg={lightBg} id={id}>
@@ -40,18 +57,36 @@ function InfoSection({ lightBg,
                             <TextWrapper>
                                 <TopLine>{topLine}</TopLine>
                                 <Heading lightText={lightText}>{headLine}</Heading>
-                                <Subtitle darkText={darkText}>{description}</Subtitle>
+                                <Subtitle darkText={darkText}>I'm an Student at Stuttgart University. 
+                                I am passionate about developing quality software.</Subtitle>
+                                <HeroP>
+                    <SocialIcons>
+                        <SocialIconLink href='//www.github.com' target='_blank' aria-label='Linkedin'>
+                            <FaGithub />
+                        </SocialIconLink>
+                        <SocialIconLink href='//www.linkedin.com' target='_blank' aria-label='Linkedin'>
+                            <FaLinkedin />
+                        </SocialIconLink>
+                    </SocialIcons>
+                </HeroP>
                                 <BtnWrap>
-                                    <Button to='home'
-                                        smooth={true}
-                                        duration={500}
-                                        spy='true'
-                                        offset={-80}
+                                    <Button 
                                         primary={primary ? 1 : 0}
                                         dar={dark ? 1 : 0}
                                         dark2={dark2 ? 1 : 0}
+                                        onMouseEnter={onHover1} 
+                                        onMouseLeave={onHover1}
                                     >
-                                        {buttonLabel}
+                                        Contact Me{hover1 ? <ArrowForward /> : <ArrowRight />}
+                                    </Button>
+                                    <Button 
+                                        primary={primary ? 1 : 0}
+                                        dar={dark ? 1 : 0}
+                                        dark2={dark2 ? 1 : 0}
+                                        onMouseEnter={onHover2} 
+                                        onMouseLeave={onHover2}
+                                    >
+                                        My Resume{hover2 ? <ArrowForward /> : <ArrowRight />}
                                     </Button>
                                 </BtnWrap>
                             </TextWrapper>

@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { MdKeyboardArrowRight, MdArrowForward } from 'react-icons/md';
+import { Link } from 'react-scroll';
 
 export const InfoContainer = styled.div`
     color: #fff;
@@ -13,7 +15,7 @@ export const InfoWrapper = styled.div`
     display:grid;
     z-index: 1;
     height: 65vh;
-    width: 80%;
+    width: 70%;
     margin-right: auto;
     margin-left: auto;
     padding: 0 2.5vh;
@@ -44,7 +46,7 @@ export const Column2 = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-    max-width: 35%;
+    max-width: 80%;
     padding-top: 0;
     padding-bottom: 60px;
 `;
@@ -61,7 +63,7 @@ export const TopLine = styled.p`
 
 export const Heading = styled.h1`
     margin-bottom: 2.5vh;
-    font-size: 5vh;
+    font-size: 4vh;
     line-height: 1.1;
     font-weight: 600;
     color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')};
@@ -82,6 +84,8 @@ export const Subtitle = styled.p`
 export const BtnWrap = styled.div`
     display:flex;
     justify-content: flex-start;
+   // margin-left:12.5%;
+
 `;
 
 export const ImgWrap = styled.div`
@@ -97,4 +101,73 @@ export const Img = styled.img`
     height: 100%;
     margin: 0 0 10px 0;
     padding-right: 0;
-`
+`;
+
+export const ArrowForward = styled(MdArrowForward)`
+    margin-left: 8px;
+    font-size: 2.25vh;
+`;
+
+export const ArrowRight = styled(MdKeyboardArrowRight)`
+    margin-left: 8px;
+    font-size: 2.25vh;
+`;
+
+export const SocialIcons = styled.div`
+    display: center;
+    align-items: center;
+    width: 240px;
+`;
+
+export const SocialIconLink = styled.a`
+    padding: 1vh;
+    color: #fff;
+    font-size: 2.5vh;
+    svg:hover{
+        transform: scale(1.2);
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+    }
+`;
+
+export const HeroP = styled.p`
+    margin-top: 2.5vh;
+    margin-bottom: 1vh;
+    color: #fff;
+    font-size: 2.5vh;
+    text-align: center;
+    max-width: 600px;
+
+    @media screen and (max-width: 768px){
+        font-size: 24px;
+
+    }
+
+    @media screen and (max-width: 480px){
+        font-size:18px;
+    }
+`;
+
+export const Button = styled(Link)`
+    border-radius: 5.25vh;
+    background: ${({ primary }) => (primary ? '#fff' : '#fff')};
+    white-space: nowrap;
+    padding: ${({ big }) => (big ? '1.25vh 5vh' : '1vh 2vh')};
+    color: ${({ dark }) => (dark ? '#000' : '#000')};
+    font-size:${({ fontBig }) => (fontBig ? '1.5vh' : '1.25vh')};
+    outline:none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    margin-right: 1.5vh;
+
+    &:hover{
+        transform: scale(1.1);
+        transition: all 0.2s ease-in-out;
+        background: ${({ primary }) => (primary ? '#fff' : '#fff')};
+    }
+`;

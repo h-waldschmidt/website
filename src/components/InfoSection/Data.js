@@ -1,14 +1,14 @@
 export const homeObjOne = {
-    id: 'Projects',
+    id: 'About',
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
-    topLine: 'Premium Bank',
-    headLine: 'Unlimited Trans',
-    description: 'Desc homeOne',
+    topLine: '',
+    headLine: 'About Me',
+    description: 'I\'m an Software Developer',
     buttonLabel: 'Get Started',
     imgStart: false,
-    img: require('../../images/svg-1.svg'),
+    img: require('../../images/aboutme.svg'),
     alt: 'car',
     dark: true,
     primary: true,
@@ -16,7 +16,7 @@ export const homeObjOne = {
 };
 
 export const homeObjTwo = {
-    id: 'About',
+    id: 'Projects',
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
