@@ -42,7 +42,7 @@ const HeroSection = () => {
                 <HeroBtnWrapper>
                     <Button href='//www.github.com' target='_blank' onMouseEnter={onHover} onMouseLeave={onHover}
                         primary='true' dark='true'>
-                        My Resume{hover ? <ArrowForward /> : <ArrowRight />}
+                        Contact Me{hover ? <ArrowForward /> : <ArrowRight />}
                     </Button>
 
                 </HeroBtnWrapper>
