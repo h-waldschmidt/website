@@ -135,7 +135,6 @@ export const HeroP = styled.p`
     margin-bottom: 1vh;
     color: #fff;
     font-size: 2.5vh;
-    text-align: center;
     max-width: 600px;
 
     @media screen and (max-width: 768px){
