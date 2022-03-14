@@ -51,7 +51,7 @@ const Navbar = ({ toggle }) => {
                                     onClick={toggleHome}
                                     spy={true}
                                     exact='true'
-                                    offset={0}>
+                                    offset={-80}>
                                     Home
                                 </NavLinks>
                             </NavItem>
@@ -62,7 +62,7 @@ const Navbar = ({ toggle }) => {
                                     duration={500}
                                     spy={true}
                                     exact='true'
-                                    offset={0}>
+                                    offset={-80}>
                                     About
                                 </NavLinks>
                             </NavItem>
@@ -72,7 +72,7 @@ const Navbar = ({ toggle }) => {
                                     duration={500}
                                     spy={true}
                                     exact='true'
-                                    offset={0}>
+                                    offset={-80}>
                                     Skills
                                 </NavLinks>
                             </NavItem>
@@ -82,7 +82,7 @@ const Navbar = ({ toggle }) => {
                                     duration={500}
                                     spy={true}
                                     exact='true'
-                                    offset={0}>
+                                    offset={-80}>
                                     Projects
                                 </NavLinks>
                             </NavItem>
