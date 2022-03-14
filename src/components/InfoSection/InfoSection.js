@@ -8,10 +8,8 @@ import {
     Column1,
     Column2,
     TextWrapper,
-    TopLine,
     Heading,
     Subtitle,
-
     ImgWrap,
     Img
 } from './InfoElements';
@@ -20,12 +18,10 @@ function InfoSection({
     lightBg,
     id,
     imgStart,
-    topLine,
     lightText,
     headLine,
     darkText,
     description,
-    buttonLabel,
     img,
     alt,
     show
@@ -39,7 +35,6 @@ function InfoSection({
                     <InfoRow imgStart={imgStart}>
                         <Column1>
                             <TextWrapper>
-                                <TopLine>{topLine}</TopLine>
                                 <Heading lightText={lightText}>{headLine}</Heading>
                                 <Subtitle darkText={darkText}>{description}</Subtitle>
                                 <AboutSocials show={show}/>

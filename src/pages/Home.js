@@ -4,7 +4,6 @@ import InfoSection from '../components/InfoSection/InfoSection';
 import {
     homeObjOne,
     homeObjTwo,
-    homeObjThree
 } from '../components/InfoSection/Data'
 import Services from '../components/Services/Services';
 
@@ -17,7 +16,6 @@ function Home() {
             <InfoSection {...homeObjOne} />
             <InfoSection {...homeObjTwo} />
             <Services />
-            <InfoSection {...homeObjThree} />
         </>
     )
 };
