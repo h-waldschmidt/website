@@ -9,6 +9,7 @@ export const InfoContainer = styled.div`
     @media screen and (max-width: 768px){
         padding:75px 0;
     }
+    
 `;
 
 export const InfoWrapper = styled.div`
@@ -20,6 +21,11 @@ export const InfoWrapper = styled.div`
     margin-left: auto;
     padding: 0 2.5vh;
     justify-content: center;
+    @media screen and (max-width: 480px){
+        width: 90%;
+        height: 30vh;
+    }
+    
 `;
 
 export const InfoRow = styled.div`
@@ -37,6 +43,9 @@ export const Column1 = styled.div`
     margin-bottom: 15px;
     padding: 0 15px;
     grid-area: col1;
+    @media screen and (max-width: 480px){
+        padding:0;
+    }
 `;
 
 export const Column2 = styled.div`
@@ -49,6 +58,10 @@ export const TextWrapper = styled.div`
     max-width: 80%;
     padding-top: 0;
     padding-bottom: 60px;
+
+    @media screen and (max-width: 480px){
+        max-width: 100%;
+    }
 `;
 
 export const TopLine = styled.p`
@@ -85,7 +98,6 @@ export const BtnWrap = styled.div`
     display:flex;
     justify-content: flex-start;
    // margin-left:12.5%;
-
 `;
 
 export const ImgWrap = styled.div`
@@ -93,6 +105,9 @@ export const ImgWrap = styled.div`
     height: 100%;
     @media screen and (max-width:834px){
         max-width: 100%;
+    }
+    @media screen and (max-width: 480px){
+        display:none;
     }
 `;
 
@@ -117,6 +132,9 @@ export const SocialIcons = styled.div`
     display: center;
     align-items: center;
     width: 240px;
+    @media screen and (max-width: 480px){
+        width: 100%;
+    }
 `;
 
 export const SocialIconLink = styled.a`
