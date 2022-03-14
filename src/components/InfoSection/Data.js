@@ -5,14 +5,15 @@ export const homeObjOne = {
     lightTextDesc: true,
     topLine: '',
     headLine: 'About Me',
-    description: 'I\'m an Software Developer',
+    description: 'I\'m an Student at Stuttgart University. I am passionate about developing quality software.',
     buttonLabel: 'Get Started',
     imgStart: false,
     img: require('../../images/aboutme.svg'),
     alt: 'car',
     dark: true,
     primary: true,
-    darkText: false
+    darkText: false,
+    show: true
 };
 
 export const homeObjTwo = {
@@ -29,7 +30,8 @@ export const homeObjTwo = {
     alt: 'car',
     dark: true,
     primary: false,
-    darkText: true
+    darkText: true,
+    show: false
 };
 export const homeObjThree = {
     id: 'Contact',
@@ -45,5 +47,6 @@ export const homeObjThree = {
     alt: 'car',
     dark: false,
     primary: false,
-    darkText: true
+    darkText: true,
+    show: false
 };
