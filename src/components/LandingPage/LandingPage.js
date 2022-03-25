@@ -1,6 +1,7 @@
 import React from 'react'
 
 import AboutSocials from './AboutSocials'
+import Icon1 from '../../images/svg-1.svg'
 
 import {
     InfoContainer,
@@ -12,12 +13,7 @@ import {
     Heading,
     Subtitle,
     ImgWrap,
-    Img
-} from './LandingElements';
-
-import Icon1 from '../../images/svg-1.svg'
-
-import {
+    Img,
     ServicesContainer,
     ServicesH1,
     ServicesWrapper,
@@ -25,7 +21,7 @@ import {
     ServicesIcon,
     ServicesH2,
     ServicesP
-} from './ServicesElements';
+} from './LandingElements';
 
 function InfoSection() 
 {
