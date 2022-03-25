@@ -9,7 +9,7 @@ import {
     SocialIconLink,
     Button,
     BtnWrap
-} from './InfoElements';
+} from './LandingElements';
 
 function AboutSocials(props)
 {

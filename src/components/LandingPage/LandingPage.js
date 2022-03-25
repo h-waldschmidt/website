@@ -1,6 +1,7 @@
 import React from 'react'
 
 import AboutSocials from './AboutSocials'
+
 import {
     InfoContainer,
     InfoWrapper,
@@ -12,7 +13,19 @@ import {
     Subtitle,
     ImgWrap,
     Img
-} from './InfoElements';
+} from './LandingElements';
+
+import Icon1 from '../../images/svg-1.svg'
+
+import {
+    ServicesContainer,
+    ServicesH1,
+    ServicesWrapper,
+    ServicesCard,
+    ServicesIcon,
+    ServicesH2,
+    ServicesP
+} from './ServicesElements';
 
 function InfoSection() 
 {
@@ -54,6 +67,26 @@ function InfoSection()
                     </InfoRow>
                 </InfoWrapper>
             </InfoContainer>
+            <ServicesContainer id='about'>
+            <ServicesH1>Projects</ServicesH1>
+            <ServicesWrapper>
+                <ServicesCard>
+                    <ServicesIcon src={Icon1} />
+                    <ServicesH2>Reduce Expe</ServicesH2>
+                    <ServicesP>We help</ServicesP>
+                </ServicesCard>
+                <ServicesCard>
+                    <ServicesIcon src={Icon1} />
+                    <ServicesH2>Reduce Expe 2</ServicesH2>
+                    <ServicesP>We help 2</ServicesP>
+                </ServicesCard>
+                <ServicesCard>
+                    <ServicesIcon src={Icon1} />
+                    <ServicesH2>Reduce Expe 3</ServicesH2>
+                    <ServicesP>We help 3</ServicesP>
+                </ServicesCard>
+            </ServicesWrapper>
+        </ServicesContainer>
         </>
     );
 }

@@ -1,7 +1,6 @@
 import React from 'react';
 import HeroSection from '../components/HeroSection/HeroSection';
-import InfoSection from '../components/InfoSection/InfoSection';
-import Services from '../components/Services/Services';
+import InfoSection from '../components/LandingPage/LandingPage';
 
 
 function Home() {
@@ -10,7 +9,6 @@ function Home() {
         <>
             <HeroSection />
             <InfoSection />
-            <Services />
         </>
     )
 };
