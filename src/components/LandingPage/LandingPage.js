@@ -63,7 +63,7 @@ function InfoSection()
                     </InfoRow>
                 </InfoWrapper>
             </InfoContainer>
-            <ServicesContainer id='about'>
+            <ServicesContainer id='Projects'>
             <ServicesH1>Projects</ServicesH1>
             <ServicesWrapper>
                 <ServicesCard>
