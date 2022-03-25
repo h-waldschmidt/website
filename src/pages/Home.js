@@ -13,8 +13,7 @@ function Home() {
     return (
         <>
             <HeroSection />
-            <InfoSection {...homeObjOne} />
-            <InfoSection {...homeObjTwo} />
+            <InfoSection />
             <Services />
         </>
     )
