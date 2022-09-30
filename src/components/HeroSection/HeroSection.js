@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button } from '../ButtonElement';
 import Video from '../../images/trees.jpg';
+
 import {
     HeroContainer,
     HeroBg,
@@ -14,10 +15,11 @@ import {
     SocialIcons,
     SocialIconLink
 } from './HeroElements';
+
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
+
 const HeroSection = () => {
     const [hover, setHover] = useState(false);
-
     const onHover = () => {
         setHover(!hover);
     }
@@ -44,7 +46,6 @@ const HeroSection = () => {
                         primary='true' dark='true'>
                         Contact Me{hover ? <ArrowForward /> : <ArrowRight />}
                     </Button>
-
                 </HeroBtnWrapper>
             </HeroContent>
         </HeroContainer>

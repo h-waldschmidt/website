@@ -1,4 +1,5 @@
 import React from 'react';
+
 import {
     SidebarContainer,
     Icon,
@@ -7,6 +8,7 @@ import {
     SidebarMenu,
     SidebarLink,
 } from './SidebarElements';
+
 const Sidebar = ({ isOpen, toggle }) => {
     return (
         <SidebarContainer isOpen={isOpen} onClick={toggle}>
