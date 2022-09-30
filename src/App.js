@@ -13,7 +13,6 @@ function App() {
     }
     return (
 
-
         <Router>
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle} />
@@ -22,8 +21,6 @@ function App() {
                 <Route exact path='/ted' element={<TED />} />
             </Routes>
         </Router>
-
-
     );
 }
 
